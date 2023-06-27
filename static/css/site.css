@@ -1,0 +1,21 @@
+* {
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.message {
+  font-weight: 600;
+  color: blue;
+  background-color: aqua;
+}
+h1 {
+  border: 2px black solid;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{% block title %} Welcome to Film Flex {% endblock %}</h1>
+<html>
+   <body>
+      
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>New Film Record Entry</h3>
+         Title<br>
+         <input type = "text" name = "title" /></br>
+         
+         Year Released<br>
+         <input type = "text" name = "yearRld" /></br>
+         
+         Rating<br>
+         <input type = "text" name = "rating" /><br>
+         
+         Duration<br>
+         <input type = "text" name = "duration" /><br>
+         Genre<br>
+         <input type = "text" name = "genre" /><br>
+         <br><br><br><br>
+         <input type = "submit" value = "submit" /><br>
+      </form>
+      {% endblock %} 
+   </body>
+</html>

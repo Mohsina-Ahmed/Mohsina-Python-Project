@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{% block title %} Welcome to Film Flex {% endblock %}</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th><span>Film-ID</span></th>
+      <th><span>Film Title</span></th>
+      <th><span>Year Released</span></th>
+      <th><span>Rating</span></th>
+      <th><span>Film Duration</span></th>
+      <th><span>Genre</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in posts %}
+    <tr>
+      <td>
+        <span>{{post['filmID']}}</span>
+      </td>
+      <td>
+        <span>{{post['title']}}</span>
+      </td>
+      <td>
+        <span>{{post['yearReleased']}}</span>
+      </td>
+      <td>
+        <span>{{post['rating']}}</span>
+      </td>
+      <td>
+        <span>{{post['duration']}}</span>
+      </td>
+      <td>
+        <span>{{post['genre']}}</span>
+      </td>
+    </tr>
+    {% endfor %} {% endblock %}
+  </tbody>
+</table>
